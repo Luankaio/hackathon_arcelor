@@ -1,0 +1,45 @@
+id,dado,valor,unidade,ano,escopo,status,confianca,solucoes,fonte_codigo,url
+1,Geração da termelétrica do Pecém,1367,GWh,2024,Pecém,confirmado,alta,01;02;03,S05/S06,https://mais.opovo.com.br/jornal/economia/2025/05/01/arcelormittal-pecem-tem-lucro-de-rs-115-bilhao-em-2024-aponta-balanco.html
+2,Geração média do Pecém (1367 GWh / 8784 h),155.6,MW médios,2024,Pecém,derivado,alta,01;02;03,S05,
+3,Consumo interno médio do Pecém,138,MW médios,2017,Pecém,confirmado,alta,01;02;03,S01,https://abmproceedings.com.br/en/article/inicio-da-operacao-da-termoeletrica-da-csp
+4,Consumo da planta do Pecém,168,MW,2019-2020,Pecém,confirmado,media,01;02;03,S02,https://archivo.cepal.org/pdfs/bigpushambiental/Caso19-CSPCeara.pdf
+5,Consumo específico de eletricidade do Pecém,500,kWh/t placa,2017-2019,Pecém,derivado,media,01;02;03,S01/S02,
+6,Excedente vendido ao SIN no primeiro ano,436.2,GWh,out/2016-set/2017,Pecém,confirmado,alta,02,S04,https://www.gov.br/mdic/pt-br/assuntos/zpe/arquivos/informativo_zpe_-_edicao011.pdf
+7,Capacidade outorgada da termelétrica (18+100+100 MW),218,MW,2016,Pecém,confirmado,alta,02,S03,https://diariodonordeste.verdesmares.com.br/negocios/termeletrica-da-siderurgica-entra-em-operacao-1.1634642
+8,TRT do alto-forno do Pecém,16,MW,~2020,Pecém,confirmado,alta,02,S02,https://archivo.cepal.org/pdfs/bigpushambiental/Caso19-CSPCeara.pdf
+9,Vapor de processo da termelétrica (capacidade / média),90 / 65,t/h,2017,Pecém,confirmado,alta,03,S01,https://abmproceedings.com.br/en/article/inicio-da-operacao-da-termoeletrica-da-csp
+10,Produção de placas do Pecém,3.0,Mt,2024,Pecém,confirmado,alta,01;02;03,S05/S14,https://www.gem.wiki/ArcelorMittal_Pec%C3%A9m_steel_plant
+11,Valor de 1% de eficiência elétrica no Pecém,12-13.6,GWh/ano,atual,Pecém,derivado,media,01;03,—,
+12,Resultado líquido do Pecém,-168.6,R$ milhões,2025,Pecém,confirmado,alta,todas,S15,https://mais.opovo.com.br/jornal/economia/2026/04/30/arcelormittal-pecem-sofre-com-tarifaco-e-tem-prejuizo-em-2025.html
+13,Projetos de eficiência energética da ArcelorMittal Brasil (12 projetos),63,R$ milhões/ano (estimado),2024,Brasil,confirmado,alta,todas,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+14,Ar comprimido reportado pela ArcelorMittal Brasil,845705,GJ,2024,Brasil,confirmado,alta,03;01,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+15,Ar comprimido da ArcelorMittal Brasil em eletricidade (845705 GJ / 1.01 × 0.1097),92,GWh/ano,2024,Brasil,derivado,media,03;01,S18/S19,
+16,Fator de energia do ar comprimido (ArcelorMittal),1.01,GJ/1000 m³ (0.1097 kWh/m³),2025,Grupo,confirmado,alta,03,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+17,Fator de eletricidade primária (ArcelorMittal),9.208,GJ/MWh,2025,Grupo,confirmado,alta,todas,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+18,Fator de emissão do SIN usado pela ArcelorMittal Brasil,46.0,gCO2/kWh,out/2023-set/2024,Brasil,confirmado,alta,01;03,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+19,Fator de emissão do Brasil usado pelo Grupo,52.8,kgCO2/MWh,2025,Grupo,confirmado,alta,01;03,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+20,Intensidade energética da ArcelorMittal Brasil (tabela GRI 302-3),19.39,GJ/t,2024,Brasil,confirmado,alta,todas,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+21,Intensidade energética da ArcelorMittal Brasil (texto; 20.46 em 2018),20.78,GJ/t,2024,Brasil,confirmado,alta,todas,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+22,Intensidade de GEE da ArcelorMittal Brasil (escopos 1+2),1.71,tCO2e/t,2024,Brasil,confirmado,alta,01;03,S18,https://brasil.arcelormittal.com/assets/pdf/arcelormittal/publications-reports/relatorio-de-sustentabilidade-2024.pdf
+23,Intensidade energética do Grupo,23.00,GJ/t,2025,Grupo,confirmado,alta,todas,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+24,Energia recuperada e reutilizada no Grupo,24.2,% da energia primária,2025,Grupo,confirmado,alta,02,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+25,Capex de eficiência energética aprovado no Grupo,1163,US$ milhões,2025,Grupo,confirmado,alta,todas,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+26,Intensidade de CO2e do Grupo (escopos 1+2),1.79,tCO2e/t,2025,Grupo,confirmado,alta,01;03,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+27,Meta de redução de intensidade de CO2 do Grupo até 2030 vs 2018,até 10,%,2026,Grupo,confirmado,alta,todas,S19,https://cdn.arcelormittal.com/media/kyqeahax/2025-sd-report-22-april-2026-final-upload.pdf
+28,Vanderbijlpark: redução de eletricidade com VSD em bombas ociosas,53,%,2017,Grupo (África do Sul),confirmado,alta,01,S30,https://www.crown.co.za/latest-news/mechchem-africa-latest-news/7984-industrial-efficiency-initiatives-an-amsa-success-story
+29,Saldanha: economia do programa de energia,6.6,% (10.6 de 160 MW),2012,Grupo (África do Sul),confirmado,alta,01;03,S31,https://www.powersystemsdesign.com/articles/western-capes-largest-electricity-consumer-saves-r90-million-in-one-year-with-energy-efficiency-project/8/4904
+30,Bissen: redução de eletricidade do ar comprimido com caça a vazamentos,7,%,2023,Grupo (Luxemburgo),confirmado,alta,03,S29,https://www.klimapaktfirbetriber.lu/en/case-studies/economies-en-air-comprime-a-lusine-de-bissen-darcelormittal/
+31,Belval: economia com IA de energia (9 GWh/ano; ROI < 6 meses),3,%,2018-2020,Grupo (Luxemburgo),confirmado,alta,01;02,S27,https://innoenergy.com/uploads/2023/01/success-story-arcelormittal-energiency-eng.pdf
+32,Dofasco: melhoria de desempenho energético com ISO 50001,6.16,%,2016-2018,Grupo (Canadá),confirmado,alta,todas,S26,https://www.cleanenergyministerial.org/content/uploads/2022/03/cem-em-casestudy-arcelormittal-canada.pdf
+33,Fos-sur-Mer: economia elétrica identificada,2.5-4.3,€ milhões/ano,2011,Grupo (França),confirmado,alta,01;03,S28,https://library.e.abb.com/public/33218edc3d91bf91852579270060c990/Case%20study%20-%20Energy%20Savings%20at%20Steel%20Milll(CAS069a)LowRes.pdf
+34,Siderúrgica de MG: redução nos compressores com ultrassom,57.2,%,2017,Setor (Brasil),confirmado,alta,03,S32,https://www.scielo.br/j/remi/a/fGPXZbrst9Qfrk69k4qSWDn/?lang=en
+35,PLD Nordeste médio jan-nov/2025 (média simples),178,R$/MWh,2025,Nordeste,derivado,alta,todas,S35,https://amee.com.br/boletim-informativo-mensal-novembro-2025/
+36,Contrato convencional de longo prazo 2027-2030,190.76,R$/MWh,nov/2025,Brasil,confirmado,alta,todas,S35,https://amee.com.br/boletim-informativo-mensal-novembro-2025/
+37,PLD 2026 (piso / teto horário),57.31 / 1611.04,R$/MWh,2026,Brasil,confirmado,alta,02,S36,https://grugeen.eng.br/pld/
+38,Energia no custo de produção do aço,20-40,%,c.2018,Mundo,confirmado,alta,todas,S24,https://www.steel.org.au/getattachment/bfc722b0-1320-4d04-84df-30bdd500aa5b/fact_energy_2016.pdf
+39,Intensidade energética média mundial,20.95,GJ/t,2024,Mundo,confirmado,alta,todas,S23,https://worldsteel.org/wp-content/uploads/Sustainability-Indicators-publication-2025_Feb-2026-1.pdf
+40,Autogeração na siderurgia brasileira,48,% do consumo elétrico,2024,Brasil,confirmado,alta,02,S22,https://www.acobrasil.org.br/site/wp-content/uploads/2025/09/Folder_AcoBrasil_Sustentabilidade_2025.pdf
+41,VSD nas utilidades (EPE/BNDES): economia / payback,0.02 GJ/t / 0.5 ano,—,2012,Setor (Brasil),confirmado,media,01,S25,https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-314/topico-407/Produto%205%20-%20Relatorio%20da%20cadeia%20sider%C3%BArgica.pdf
+42,Consumo elétrico interno atual do Pecém,?,GWh/ano,2024-2025,Pecém,lacuna,—,01;02;03,—,
+43,Preço do excedente / transferência intragrupo,?,R$/MWh,atual,Pecém,lacuna,—,01;02;03,—,
+44,Compressores de ar do Pecém (número; kW; vazamento %),?,—,atual,Pecém,lacuna,—,03;01,—,
