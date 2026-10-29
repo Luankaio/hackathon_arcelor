@@ -24,6 +24,23 @@
 - 03-vazamentos-ar-comprimido (Sibilo): sonda ultrassônica ESP32 + app de rota; cenário base ≈ R$ 84 mil/ano numa área-piloto (estimativa).
 - Todos com números ilustrativos e premissas a validar com a ArcelorMittal no Ideathon. Conteúdo e fontes ainda NÃO revisados pelo Luan.
 
+## Soluções v2 (`solutions-v2/`, só solucao.md, validadas por startups/casos reais; ganhos = estimativas)
+- 01-calor-residual (TermoRadar): purgadores/linhas de vapor, R$ 1–2 mi/ano Pecém.
+- 02-motores-bombas-vsd (RotaCerta): motor superdimensionado + VSD, R$ 5–16 mi/ano.
+- 03-ia-processo-gemeo-digital (TonaZero): setpoints IA p/ kWh/t e GJ/t.
+- 04-gestao-energia-iso50001 (SGE-Pecém): baseline, M&V, anomalias, gamificação.
+- 05-renovaveis-armazenamento (SolMatch Pecém): PPA hora a hora + carga flexível; sobrepõe HoraCerta.
+- 06-manutencao-preditiva-energetica: ganho de energia pequeno, pitch via parada evitada.
+- Nenhuma tem hackathon vencedor idêntico; ainda NÃO revisadas pelo Luan.
+
+- Ranking v1+v2: `reports/2026-10-28-ranking-solucoes.md` (RotaCerta e Sibilo no topo; sugestão de combiná-las).
+
+## Soluções v3 (`solutions-v3/`): as 3 com IA + hardware + software e validação externa
+- 01-motores-ia-sensor-corrente, 02-baseline-ia-energia-por-tonelada, 03-vazamentos-ultrassom-ia. Não revisadas pelo Luan.
+
+## Soluções v4 (`solutions-v4/`): aparelho, pico, defeito e aviso ao técnico (base VoltIA)
+- README + 01 VoltIA reescrito, 02 ESPHome/Home Assistant, 03 NILM. Recomendação: 02 como base + lógica da 01. Não revisadas pelo Luan.
+
 ## Dados públicos (`dados/`)
 - Começar por `dados/00-indice.md` e `dados/RANKING-DADOS-POR-IMPORTANCIA.md` (Top 10 para o pitch, lacunas, 13 correções às soluções).
 - Lacunas críticas (perguntar no Ideathon): consumo interno e excedente atuais do Pecém, preço do excedente, compressores/motores/medição por equipamento, ISO 50001. Ver `dados/lacunas-perguntas-para-ideathon.md`.
