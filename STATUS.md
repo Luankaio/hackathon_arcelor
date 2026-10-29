@@ -24,7 +24,10 @@
 - `prototipo-claude-design.md`: o que o protótipo do Luan no Claude Design (Painel, Mapa, Dispositivos) já cobre e as 10 lacunas em relação ao `solucao.md`.
 - `prompt-claude-design.md`: prompt pronto para evoluir o protótipo (unidade, chamados, preventivas, governança, analytics, cadastro em 4 etapas, mapa editável).
 - `app.md`: documento completo do app (telas e fluxos), escrito por um agente.
-- `pitches/pitch_tecnico.md` (≈ 4,8 min) e `pitches/pitch_prototipov1.md` (storytelling com a persona Chico, ≈ 4,5 min). Preços da assinatura são proposta.
+- `pitches/pitch_tecnico.md` (≈ 4,8 min) e `pitches/pitch_prototipov3.md` (+ `_prompt.md` para o Canva; versão mais recente, v1 e v2 ficam como histórico) e `pitches/pitch_prototipov1.md` (storytelling com a persona Chico, ≈ 4,5 min). Preços da assinatura são proposta.
+- `mapa/`: mapa de exemplo do Pecém a partir do OpenStreetMap (`csp_zonas.png` com áreas inferidas) para usar de fundo no mapa do protótipo.
+- `estimativas.md`: sobreconsumo por tipo de máquina, 1 mês de defeito, economia se resolvido em < 1 h e cenário de frota (Pecém/Brasil/global). Evidência mista (A/B/C), ver o arquivo.
+- `apresentações/v1/`: pitch em HTML (15 slides, capturas do protótipo, notas do apresentador, exporta PDF). Rodar: `python3 -m http.server 8765 --directory apresentações/v1`.
 - Soluções antigas (v1–v4) e o ranking delas estão na branch `archive`; `reports/2026-10-28-ranking-solucoes.md` ainda está na main.
 
 ## Dados públicos (`dados/`)

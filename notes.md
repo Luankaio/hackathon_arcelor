@@ -1,5 +1,23 @@
 # Notes (mais recente no topo)
 
+## 2026-10-29 (estimativas de sobreconsumo)
+- Subagente gerou solucao_main/estimativas.md: 18 tipos de máquina, 1 mês de defeito (de R$ 316 a R$ 69 mil por máquina, base R$ 209/MWh), correção em < 1 h evita 99,86% e cenário de frota com 1% das máquinas (Pecém ≈ R$ 91 mil/ano; Brasil ≈ R$ 444 mil; global ≈ R$ 1,66 mi). Evidência A só em ar comprimido, pressão, correia em V e duto; o resto é B/C. Links só do resumo da busca precisam de conferência antes de citar. Conclusão: o cenário é pequeno frente ao 1% (≈ 3,6% dele no Pecém).
+
+## 2026-10-29 (ganhos sobre 720 h + precificação)
+- Tela "hoje" passou a "até 720 h" (faixa 24 h–720 h). Ganhos recalculados sobre 720 h: até 43.200× (720 h ÷ 1 min; 24 h daria 1.440×) e até 719 h 59 min recuperados. Nova tela 15 de custo e precificação: R$ 499 por pátio industrial (periodicidade a confirmar) + sensores R$ 900–1.500/máquina (estimativa). Pitch v3, prompt do Canva e apresentação web agora têm 17 slides.
+
+## 2026-10-29 (720 h no pitch v3)
+- Nova tela 03 "720 h" (tempo que uma máquina pode ficar sem revisão, ≈ 30 dias; cenário ilustrativo) antes do 1%. Pitch v3, prompt do Canva e apresentação web v1 agora têm 16 slides; telas seguintes renumeradas e telas 02/15 aparadas para manter 5 min.
+
+## 2026-10-29 (apresentação web v1)
+- Criado apresentações/v1/index.html: 15 slides 1920x1080 em HTML/CSS/JS puro, com as 5 capturas do protótipo (imagens/). Teclas: setas, F tela cheia, N notas (falas), G ver todos; ?print + Ctrl+P exporta PDF 1 slide por página (base para virar slides). Logos: colocar logos/arcelormittal.png e logos/ifce.png (hoje aparecem espaços reservados). Servidor: .claude/launch.json (porta 8765). Cores da paleta são aproximadas.
+
+## 2026-10-29 (pitch v3)
+- Criados solucao_main/pitches/pitch_prototipov3.md e pitch_prototipov3_prompt.md (Canva). Reorganizado em blocos: oportunidade (1% e R$ 2 mi em telas separadas), produto (uma tela por funcionalidade) e ganhos (52 h → 1 min → 3.120× → 51 h 59 min, um número por tela). Base: v2. Logos ArcelorMittal e IFCE em todas as telas; precisam ser enviadas ao Canva antes.
+
+## 2026-10-29 (mapa de exemplo do Pecém)
+- Não há layout oficial público da CSP (EIA/RIMA só parcial na Semace). Usei o OpenStreetMap (way 299910787): ~110 prédios, vias, ferrovia, correia tubular de carvão, portaria, subestações e o Alto-Forno 1 com nome. Gerado solucao_main/mapa/ com desenho só OSM e versão com áreas sobrepostas (pátio, sínter, coqueria, termelétrica, aciaria+lingotamento, pátio de placas = inferidas). Crédito ODbL obrigatório.
+
 ## 2026-10-29 (pitches)
 - Criada solucao_main/pitches/: pitch_tecnico.md (10 páginas, ~680 palavras ≈ 4,8 min: medição, arquitetura, regras, chamados, mapa/rota, analytics, governança, custo, piloto) e pitch_prototipov1.md (storytelling com a persona fictícia Francisco "Chico" Holanda, técnico de manutenção elétrica da Aciaria, ronda toda quarta; ~630 palavras ≈ 4,5 min).
 - Conta do storytelling: defeito na quinta → 144 h até a ronda; 5 máquinas (ventilador despoeiramento, exaustor sinterização, compressor, bomba AF, correia) = 196,2 MWh = R$ 41.006 a R$ 209/MWh; potências são estimativas. Planos propostos: piloto 90 dias sem licença, R$ 89/máquina/mês, ou 20% da economia (proposta do Claude, a validar).
