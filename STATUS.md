@@ -18,38 +18,26 @@
 ## Pesquisa
 - `reports/2026-10-27-hackathons-eficiencia-energetica.md`: 8 soluções de hackathons. A edição 2025 desta mesma Trilha foi vencida por WeVoltz (1º) e Enerlize (2º), ambas monitoramento de energia com sensores + IA. Quase nenhuma fonte traz métrica de economia.
 
-## Soluções propostas (`solutions/`, cada uma com solucao.md + pitch.md de ≤5 min)
-- 01-voltia-industrial (VazioZero): medidor de alicate + ESP32 por máquina, detecta equipamento ligado sem produzir; ganho exemplo ≈ R$ 39 mil/ano (estimativa).
-- 02-gestao-demanda (HoraCerta): previsão + deslocamento de carga por PLD/tarifa; ganho PME ≈ R$ 77 mil/ano, ArcelorMittal R$ 0,45–2,25 mi/ano (estimativas).
-- 03-vazamentos-ar-comprimido (Sibilo): sonda ultrassônica ESP32 + app de rota; cenário base ≈ R$ 84 mil/ano numa área-piloto (estimativa).
-- Todos com números ilustrativos e premissas a validar com a ArcelorMittal no Ideathon. Conteúdo e fontes ainda NÃO revisados pelo Luan.
-
-## Soluções v2 (`solutions-v2/`, só solucao.md, validadas por startups/casos reais; ganhos = estimativas)
-- 01-calor-residual (TermoRadar): purgadores/linhas de vapor, R$ 1–2 mi/ano Pecém.
-- 02-motores-bombas-vsd (RotaCerta): motor superdimensionado + VSD, R$ 5–16 mi/ano.
-- 03-ia-processo-gemeo-digital (TonaZero): setpoints IA p/ kWh/t e GJ/t.
-- 04-gestao-energia-iso50001 (SGE-Pecém): baseline, M&V, anomalias, gamificação.
-- 05-renovaveis-armazenamento (SolMatch Pecém): PPA hora a hora + carga flexível; sobrepõe HoraCerta.
-- 06-manutencao-preditiva-energetica: ganho de energia pequeno, pitch via parada evitada.
-- Nenhuma tem hackathon vencedor idêntico; ainda NÃO revisadas pelo Luan.
-
-- Ranking v1+v2: `reports/2026-10-28-ranking-solucoes.md` (RotaCerta e Sibilo no topo; sugestão de combiná-las).
-
-## Soluções v3 (`solutions-v3/`): as 3 com IA + hardware + software e validação externa
-- 01-motores-ia-sensor-corrente, 02-baseline-ia-energia-por-tonelada, 03-vazamentos-ultrassom-ia. Não revisadas pelo Luan.
-
-## Soluções v4 (`solutions-v4/`): aparelho, pico, defeito e aviso ao técnico (base VoltIA)
-- README + 01 VoltIA reescrito, 02 ESPHome/Home Assistant, 03 NILM. Recomendação: 02 como base + lógica da 01. Não revisadas pelo Luan.
+## Solução principal (`solucao_main/`), definida pelo Luan em 29/10
+- `solucao.md` (nome provisório **MapaVolt**): sensor elétrico por máquina (V, I, P, FP, kWh) → MQTT → app com cadastro de máquina (dados nominais, potência esperada, time/cargo responsável), lista e gráficos por métrica em tempo real, times/funcionários/cargos, alerta → chamado ("pegar chamado", escalonamento), mapa editável (linhas/formas, áreas por partes, arrastar máquinas, verde/amarelo/vermelho sobreuso/cinza parada) e rota até a máquina sobre corredores desenhados a partir de um ponto de referência. Regras R1–R10, arquitetura sugerida, MVP do hackathon e números de impacto (estimativas).
+- `equipamentos.md`: medidores, gateways e sensores com preço de 29/10 (demo ≈ R$ 150–230 com ESP32 + PZEM-004T; piloto BT R$ 900–1.500 por máquina; motor grande com Kron Mult-K 05 nos TCs existentes). Preços de busca, não conferidos.
+- `prototipo-claude-design.md`: o que o protótipo do Luan no Claude Design (Painel, Mapa, Dispositivos) já cobre e as 10 lacunas em relação ao `solucao.md`.
+- `prompt-claude-design.md`: prompt pronto para evoluir o protótipo (unidade, chamados, preventivas, governança, analytics, cadastro em 4 etapas, mapa editável).
+- `app.md`: documento completo do app (telas e fluxos), escrito por um agente.
+- `pitches/pitch_tecnico.md` (≈ 4,8 min) e `pitches/pitch_prototipov1.md` (storytelling com a persona Chico, ≈ 4,5 min). Preços da assinatura são proposta.
+- Soluções antigas (v1–v4) e o ranking delas estão na branch `archive`; `reports/2026-10-28-ranking-solucoes.md` ainda está na main.
 
 ## Dados públicos (`dados/`)
 - Começar por `dados/00-indice.md` e `dados/RANKING-DADOS-POR-IMPORTANCIA.md` (Top 10 para o pitch, lacunas, 13 correções às soluções).
 - Lacunas críticas (perguntar no Ideathon): consumo interno e excedente atuais do Pecém, preço do excedente, compressores/motores/medição por equipamento, ISO 50001. Ver `dados/lacunas-perguntas-para-ideathon.md`.
 - Números ainda NÃO revisados pelo Luan; as soluções em `solutions/` ainda usam premissas que o ranking corrige.
 
+## Decisões (29/10)
+- Foco em mobile (também roda no PC); aviso só no app; rota a partir de ponto de referência criado no mapa; alerta para todos do time ou, sem time, para todos do cargo; só quem está no turno recebe; sem ninguém responsável disponível, vai para o gestor responsável. Pitch e stack ficam para depois. Escopo fechado: só protótipo mockado; gestor por time.
+
 ## Pendências
-- Definir em qual campus/Ideathon o Luan está (hoje, 27/10, é o 2º dia do Pecém).
-- Escolher qual das 3 soluções seguir (ou combinar) depois de ouvir o desafio real da ArcelorMittal.
-- Formar time (negócios/design/dev) e detalhar a ideia para o desafio 8.
+- Escolher o nome (10 sugestões em `solucao_main/solucao.md` §0).
+- Colar `solucao_main/prompt-claude-design.md` no Claude Design (de preferência num New chat; standalone fecha em 14/12/2026).
 
 ## Próximo passo
-- Luan dizer o campus e como quer abordar o desafio (indústria vs. escola/pequeno negócio vs. residência).
+- Escopo fechado (29/10): só protótipo com dados mockados, sem backend. Evoluir o protótipo no Claude Design com o prompt e revisar o resultado contra `solucao_main/app.md`.
